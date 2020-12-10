@@ -1,0 +1,35 @@
+.Header{
+  width: 100%;
+  background: #61dafb;
+  .Navbar {
+    display: flex;
+    padding: 10px;
+    justify-content: flex-end;
+    align-items: center;
+    ul{
+      display: flex;
+      list-style: none;
+      :nth-child(4){
+        margin-right: 50px;
+      }
+      li{
+        margin-right: 10px;
+        :hover{
+          opacity: .7;
+        }
+        a {
+          text-decoration: none;
+          color: black;
+
+
+        }
+      }
+    }
+  }
+}
+.container {
+  width: 1300px;
+  margin: 0 auto;
+
+
+}

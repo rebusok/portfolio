@@ -1,0 +1,36 @@
+.wrapper{
+  display: flex;
+  flex-direction: column;
+  min-width: 40%;
+  border: 1px  solid black;
+  .image{
+    flex: 3 1 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: #61dafb;
+    a{
+      width: 120px;
+      height: 50px;
+      background: #282c34;
+      text-decoration: none;
+      color: white;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      &:hover{
+        background: darkgrey;
+      }
+    }
+  }
+  .description{
+    flex: 1 1 auto;
+    padding: 10px 30px;
+    .title{
+      padding: 5px;
+    }
+    .desk{
+      padding: 5px;
+    }
+  }
+}

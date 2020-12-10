@@ -1,0 +1,33 @@
+.content{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  min-height: 500px;
+  width: 100%;
+  padding: 0 60px;
+  border: 1px solid black;
+  .block1{
+    background: #61dafb;
+    max-width: 250px;
+    padding: 10px;
+
+  }
+  .block2{
+    background: aquamarine;
+    align-self: stretch;
+
+    max-width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px;
+  }
+}
+.container {
+  composes: container from "../Header/Header.module.scss"
+}
+.Presentation{
+  width: 100%;
+  background: palevioletred;
+  padding: 80px 0;
+}

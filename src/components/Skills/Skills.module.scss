@@ -1,0 +1,39 @@
+.Skills {
+  width: 100%;
+  background: aqua;
+  padding: 80px 0;
+  .container {
+
+    .content {
+      display: flex;
+      flex-direction: column;
+      height: 600px;
+      .my_skills {
+        text-align: center;
+        border: 1px solid black;
+        flex: 1 1 auto;
+        h3{
+
+        }
+      }
+
+      .ability {
+        border: 1px solid black;
+        flex: 4 1 auto;
+        display: flex;
+        justify-content: space-between;
+        :nth-child(1){
+          margin-right: 50px;
+        }
+        :nth-child(2){
+          margin-right: 50px;
+        }
+
+      }
+    }
+  }
+}
+
+.container{
+  composes: container from "../Header/Header.module.scss";
+}
