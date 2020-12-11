@@ -9,19 +9,7 @@
     justify-content: center;
     align-items: center;
     background: #61dafb;
-    a{
-      width: 120px;
-      height: 50px;
-      background: #282c34;
-      text-decoration: none;
-      color: white;
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      &:hover{
-        background: darkgrey;
-      }
-    }
+
   }
   .description{
     flex: 1 1 auto;
@@ -30,6 +18,19 @@
       padding: 5px;
     }
     .desk{
+      padding: 5px;
+    }
+  }
+}
+@media (min-width: 360px) and (max-width: 600px){
+  .wrapper{
+    min-height: 40vh;
+    .description{
+      flex: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
       padding: 5px;
     }
   }

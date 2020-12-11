@@ -1,0 +1,14 @@
+.btn {
+
+	width: 120px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-decoration: none;
+	color: #fff;
+	background: #282c34;
+	&:hover{
+		opacity: .7;
+	}
+}

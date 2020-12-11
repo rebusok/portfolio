@@ -1,5 +1,6 @@
 import React from 'react';
 import style from './JobsItem.module.scss'
+import Button from "../../../UI/Button/Button";
 
 
 const JobsItem = () => {
@@ -7,7 +8,7 @@ const JobsItem = () => {
         <React.Fragment>
             <div className={style.wrapper}>
                 <div className={style.image}>
-                    <a href="#">Смотреть</a>
+                    <Button title={"Смотреть"}/>
                 </div>
                 <div className={style.description}>
                     <div className={style.title}>Название проекта</div>

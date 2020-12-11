@@ -17,6 +17,9 @@
         :hover{
           opacity: .7;
         }
+        .active {
+          color: red;
+        }
         a {
           text-decoration: none;
           color: black;
@@ -31,4 +34,13 @@
   max-width: 1300px;
   margin: 0 auto;
 
+}
+
+
+@media (min-width: 360px) and (max-width: 600px){
+  .container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 }

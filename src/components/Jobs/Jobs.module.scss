@@ -5,7 +5,7 @@
   .content{
     display: flex;
     flex-direction: column;
-    height: 600px;
+    min-height: 600px;
     .my_jobs{
       flex: 1 1 auto;
       display: flex;
@@ -21,4 +21,22 @@
 }
 .container{
   composes: container from "../Header/Header.module.scss";
+}
+@media (min-width: 360px) and (max-width: 600px){
+  .Jobs{
+    padding: 10px 0 20px 0;
+    .content{
+      min-height: 200px;
+      width: 100%;
+      .my_jobs{
+        flex: 0;
+        padding: 0 0 10px 0;
+
+      }
+      .wrapper_item{
+        flex-direction: column;
+        max-height: 100vh;
+      }
+    }
+  }
 }

@@ -22,12 +22,10 @@
         flex: 4 1 auto;
         display: flex;
         justify-content: space-between;
-        :nth-child(1){
+        &:nth-child(1){
           margin-right: 50px;
         }
-        :nth-child(2){
-          margin-right: 50px;
-        }
+
 
       }
     }
@@ -36,4 +34,32 @@
 
 .container{
   composes: container from "../Header/Header.module.scss";
+}
+@media (min-width: 360px) and (max-width: 600px){
+  .Skills {
+    padding: 20px 0 50px 0 ;
+    .container{
+      .content{
+        width: 100%;
+        max-height: 60%;
+        .my_skills{
+          flex: 0 1 auto;
+        }
+        .ability{
+          flex-direction: column;
+          justify-content: center;
+          align-items: center;
+          margin: 0;
+          width: 100%;
+
+          &:nth-child(1){
+            margin-right: 0;
+            margin-top: 20px;
+          }
+
+        }
+      }
+    }
+  }
+
 }

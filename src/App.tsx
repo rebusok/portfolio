@@ -1,22 +1,18 @@
 import React from 'react';
 import './App.css'
 import Header from "./components/Header/Header";
-import Presentation from "./components/Presentation/Presentation";
-import Skills from "./components/Skills/Skills";
-import Jobs from "./components/Jobs/Jobs";
-import Employ from "./components/Employ/Employ";
-
+import {HashRouter} from 'react-router-dom'
+import Routes from "./Navigation/Routes/Routes";
 
 function App() {
-  return (
-    <div>
-      <Header/>
-      <Presentation/>
-      <Skills/>
-      <Jobs/>
-      <Employ/>
-    </div>
-  );
+    return (
+        <div>
+            <HashRouter>
+                <Header/>
+                <Routes/>
+            </HashRouter>
+        </div>
+    );
 }
 
 export default App;
