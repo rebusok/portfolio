@@ -1,7 +1,7 @@
 import React from 'react';
 import {  NavLink } from 'react-router-dom';
 import style from './Header.module.scss'
-import {PATH} from "../../Navigation/Routes/Routes";
+import {PATH} from "../../Routes/Routes";
 
 
 const Header = () => {
@@ -14,19 +14,19 @@ const Header = () => {
                         <li><NavLink
                             to={PATH.MAIN}
                             activeClassName={style.active}
-                        >Главная</NavLink></li>
+                        >Main</NavLink></li>
                         <li><NavLink
                             to={'/skills'}
                             activeClassName={style.active}
-                        >Скилы</NavLink></li>
+                        >Skills</NavLink></li>
                         <li><NavLink
-                            to={'/jobs'}
+                            to={'/project'}
                             activeClassName={style.active}
-                        >Работы</NavLink></li>
+                        >Project</NavLink></li>
                         <li><NavLink
                             to={'/contacts'}
                             activeClassName={style.active}
-                        >Контакты</NavLink></li>
+                        >Contact</NavLink></li>
                     </ul>
                 </div>
             </div>

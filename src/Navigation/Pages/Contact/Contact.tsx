@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './Contact.module.scss'
-import Button from "../../UI/Button/Button";
+import Button from "../../../UI/Button/Button";
+import Title from '../../../components/Title/Title';
 
 
 const Contact = () => {
@@ -8,11 +9,11 @@ const Contact = () => {
         <div className={style.Contact}>
             <div className={style.container}>
                 <div className={style.wrapper}>
-                    <div className={style.title}>Контакты</div>
+                    <Title title={'Contact'}/>
                     <form action="">
-                        <input type="text"/>
-                        <input type="text"/>
-                        <textarea/>
+                        <input type="text" placeholder={'Name'}/>
+                        <input type="text" placeholder={'E-mail'}/>
+                        <textarea placeholder={'You message'}/>
                     </form>
                     <div className={style.button}>
                         <Button title={"Отправить"}/>

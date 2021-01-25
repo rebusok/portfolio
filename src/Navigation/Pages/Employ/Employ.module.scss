@@ -1,5 +1,10 @@
+@value colors: "../../../App.css";
+@value dar-gray, gray, black, color_line from colors;
+
+
 .Employ {
-  padding: 60px 0;
+  padding: 80px 20px;
+  background-color: gray;
     .container{
         .wrapper{
           width: 100%;
@@ -9,17 +14,15 @@
           align-items: center;
           min-height: 100px;
           border: 1px solid black;
-          .title{
 
-          }
         }
     }
 }
 
-
 .container {
   composes: container from "../Header/Header.module.scss";
 }
+
 
 @media (min-width: 360px) and (max-width: 600px){
   .Employ{

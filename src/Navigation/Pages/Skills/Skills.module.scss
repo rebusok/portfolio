@@ -1,7 +1,10 @@
+@value colors: "../../../App.css";
+@value dar-gray, gray, color_line from colors;
+
 .Skills {
   width: 100%;
-  background: aqua;
-  padding: 80px 0;
+  background: gray;
+  padding: 80px 20px;
   .container {
 
     .content {
@@ -10,11 +13,13 @@
       height: 600px;
       .my_skills {
         text-align: center;
-        border: 1px solid black;
-        flex: 1 1 auto;
-        h3{
-
-        }
+        //border: 1px solid black;
+        flex: 0.25 1 auto;
+        //.title {
+        //  font-family: 'Josefin Sans', sans-serif;
+        //  font-size: 2rem;
+        //
+        //}
       }
 
       .ability {
@@ -30,6 +35,12 @@
       }
     }
   }
+}
+.module_line {
+  background: color_line;
+  width: 55px;
+  height: 1px;
+  margin: 30px auto;
 }
 
 .container{

@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './Skills.module.scss'
 import SkillsItem from "./SkillsItem/SkillsItem";
+import Title from "../../../components/Title/Title";
 
 
 const Skills = () => {
@@ -9,7 +10,7 @@ const Skills = () => {
             <div className={style.container}>
                 <div className={style.content}>
                     <div className={style.my_skills}>
-                        <h3>Мои скилы</h3>
+                        <Title title={'My skills'}/>
                     </div>
                     <div className={style.ability}>
                         <SkillsItem/>

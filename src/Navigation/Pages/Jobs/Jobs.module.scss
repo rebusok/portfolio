@@ -1,15 +1,21 @@
+@value colors: "../../../App.css";
+@value dar-gray, gray, black from colors;
+
+
 .Jobs{
   width: 100%;
-  background: burlywood;
-  padding: 80px 0;
+  background: black;
+  padding: 80px 20px;
   .content{
     display: flex;
     flex-direction: column;
     min-height: 600px;
     .my_jobs{
-      flex: 1 1 auto;
+      flex: 0.2 1 auto;
       display: flex;
+      flex-direction: column;
       justify-content: center;
+
     }
     .wrapper_item{
       flex: 2 1 auto;
@@ -19,6 +25,7 @@
     }
   }
 }
+
 .container{
   composes: container from "../Header/Header.module.scss";
 }

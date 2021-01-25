@@ -1,6 +1,7 @@
 import React from 'react';
 import style from './Employ.module.scss'
-import Button from "../../UI/Button/Button";
+import Button from "../../../UI/Button/Button";
+import Title from "../../../components/Title/Title";
 
 
 const Employ = () => {
@@ -8,7 +9,7 @@ const Employ = () => {
         <div className={style.Employ}>
             <div className={style.container}>
                 <div className={style.wrapper}>
-                    <div className={style.title}>Рассматриваю варианты удаленной работы</div>
+                    <Title title={'I Am Available For Freelancer'}/>
                     <Button title={"Нанять меня"}/>
                 </div>
             </div>

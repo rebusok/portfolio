@@ -1,6 +1,11 @@
 
 *{
   box-sizing: border-box;
+
 }
+@value dar-gray: #343a40;
+@value gray: #252527;
+@value black: #1f1f20;
+@value color_line: #4e93e6;
 
 

@@ -1,5 +1,11 @@
+@value colors: "../../../App.css";
+@value dar-gray, gray, color_line from colors;
+
+
 .Footer{
 	padding: 40px 0 10px 0;
+	background: gray;
+	color: #fff;
 	.container{
 		.wrapper{
 			min-height: 100px;

@@ -1,6 +1,6 @@
 import React from 'react';
 import style from './JobsItem.module.scss'
-import Button from "../../../UI/Button/Button";
+import Button from "../../../../UI/Button/Button";
 
 
 const JobsItem = () => {
@@ -11,7 +11,7 @@ const JobsItem = () => {
                     <Button title={"Смотреть"}/>
                 </div>
                 <div className={style.description}>
-                    <div className={style.title}>Название проекта</div>
+                    <div className={style.title}><h3>Название проекта</h3></div>
                     <div className={style.desk}>Краткое написание</div>
                 </div>
             </div>
