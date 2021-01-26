@@ -5,12 +5,14 @@ import style from './Button.module.scss'
 
 type ButtonType = {
     title: string
+    classAdd?: string
 }
 
 const Button = (props: ButtonType) => {
+    const finalClassName =`${style.btn} ${props.classAdd ? style[props.classAdd] : ''}`
     return (
         <React.Fragment>
-            <NavLink to={''} className={style.btn}>{props.title}</NavLink>
+            <NavLink to={''} className={finalClassName }>{props.title}</NavLink>
         </React.Fragment>
     );
 };

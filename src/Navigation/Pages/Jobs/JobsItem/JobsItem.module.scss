@@ -1,22 +1,48 @@
+@value colors: "../../../../App.css";
+@value dar-gray, gray, black from colors;
+
+
 .wrapper{
   display: flex;
   font-family: 'Roboto', sans-serif;
   flex-direction: column;
-  min-width: 40%;
+  width: calc((100% - 30px) / 3) ;
   border: 1px  solid black;
+  color: #fff;
   .image{
     flex: 3 1 auto;
     display: flex;
     justify-content: center;
     align-items: center;
-    background: #61dafb;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position:relative;
+    ::before {
+      position: absolute;
+      content: '';
+      background-color: black;
+      z-index: 0;
+      opacity: .4;
+      top:0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+
+    }
 
   }
   .description{
     flex: 1 1 auto;
     padding: 10px 30px;
+    font-weight: 300;
+    font-size: 14px;
     .title{
       padding: 5px;
+      font-family: 'Roboto', sans-serif;
+      font-size: 16px;
+      letter-spacing: 1px;
+
     }
     .desk{
       padding: 5px;
@@ -25,7 +51,9 @@
 }
 @media (min-width: 360px) and (max-width: 600px){
   .wrapper{
-    min-height: 40vh;
+    min-height: 50vh;
+    padding: 0 20px;
+    width: 100%;
     .description{
       flex: 0;
       display: flex;

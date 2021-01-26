@@ -22,6 +22,7 @@
       background: aliceblue;
       display: flex;
       justify-content: space-between;
+      background: gray;
     }
   }
 }
@@ -42,7 +43,8 @@
       }
       .wrapper_item{
         flex-direction: column;
-        max-height: 100vh;
+        min-height: 70vh;
+        align-items: center;
       }
     }
   }

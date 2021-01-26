@@ -12,3 +12,12 @@
 		opacity: .7;
 	}
 }
+
+
+.jobs_btn {
+	opacity: 0;
+	transition: opacity .3s ease-in-out;
+	&:hover{
+		opacity: .8;
+	}
+}
