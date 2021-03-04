@@ -1,15 +1,17 @@
 import React, {CSSProperties} from 'react';
 import style from './JobsItem.module.scss'
 import Button from "../../../../UI/Button/Button";
+// @ts-ignore
+import Rotate from 'react-reveal/Rotate';
 
 type PropsStyle = {
     style: CSSProperties
 }
 
 const JobsItem: React.FC< PropsStyle> = ( props) => {
-    console.log(props)
     return (
         <React.Fragment>
+            <Rotate bottom left>
             <div className={style.wrapper}>
                 <div className={style.image} style={props.style}>
                     <Button title={"Смотреть"} classAdd={'jobs_btn'}/>
@@ -19,6 +21,7 @@ const JobsItem: React.FC< PropsStyle> = ( props) => {
                     <div className={style.desk}>Краткое написание</div>
                 </div>
             </div>
+            </Rotate>
         </React.Fragment>
     );
 };

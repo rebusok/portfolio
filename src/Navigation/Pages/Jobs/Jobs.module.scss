@@ -6,6 +6,7 @@
   width: 100%;
   background: black;
   padding: 80px 20px;
+  height: 90vh;
   .content{
     display: flex;
     flex-direction: column;
@@ -33,6 +34,7 @@
 @media (min-width: 360px) and (max-width: 600px){
   .Jobs{
     padding: 10px 0 20px 0;
+    height: auto;
     .content{
       min-height: 200px;
       width: 100%;

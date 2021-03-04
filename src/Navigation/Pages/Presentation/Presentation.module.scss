@@ -6,12 +6,11 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 500px;
+  min-height: 80vh;
   width: 100%;
   padding: 0 60px;
   border: 1px solid black;
   .block1{
-    max-width: 250px;
     padding: 10px;
 
   }
@@ -34,6 +33,14 @@
   padding: 80px 20px;
   color: #fff;
 }
+.particles{
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  opacity: .3;
+}
 @media (min-width: 360px) and (max-width: 600px){
   .content {
     display: flex;
@@ -50,4 +57,24 @@
   .Presentation{
     padding: 20px 0;
   }
+}
+.line_name{
+  z-index: 3;
+  position: relative;
+  display: inline-block;
+  &:after {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: 15px;
+    width: 100%;
+    z-index: -1;
+    background: #4e93e6;
+  }
+}
+.line_rev{
+  position: relative;
+  margin: 0;
 }

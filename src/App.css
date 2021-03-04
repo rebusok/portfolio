@@ -3,6 +3,11 @@
   box-sizing: border-box;
 
 }
+body {
+  height: 100%;
+
+}
+
 @value dar-gray: #343a40;
 @value gray: #252527;
 @value black: #1f1f20;

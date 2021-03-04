@@ -7,14 +7,17 @@
   background: black;
   color: #fff;
   font-family: 'Josefin Sans', sans-serif;
+
   .Navbar {
     display: flex;
     padding: 10px;
     justify-content: flex-end;
     align-items: center;
+    height: 10vh;
     ul{
       display: flex;
       list-style: none;
+      z-index: 20;
       :nth-child(4){
         margin-right: 50px;
       }
