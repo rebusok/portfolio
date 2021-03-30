@@ -6,11 +6,11 @@
   width: 100%;
   background: black;
   padding: 80px 20px;
-  height: 90vh;
   .content{
     display: flex;
     flex-direction: column;
     min-height: 600px;
+
     .my_jobs{
       flex: 0.2 1 auto;
       display: flex;
@@ -21,6 +21,7 @@
     .wrapper_item{
       flex: 2 1 auto;
       background: aliceblue;
+      flex-wrap: wrap;
       display: flex;
       justify-content: space-between;
       background: gray;

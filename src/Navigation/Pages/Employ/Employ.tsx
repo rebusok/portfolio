@@ -12,7 +12,7 @@ const Employ = () => {
                 <Flip bottom>
                 <div className={style.wrapper}>
                     <Title title={'I Am Available For Freelancer'}/>
-                    <Button title={"Нанять меня"}/>
+                    <Button title={"Нанять меня"} link={"http://localhost:3000/portfolio#/contacts"}/>
                 </div>
                 </Flip>
             </div>

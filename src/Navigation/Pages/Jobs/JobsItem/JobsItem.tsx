@@ -5,7 +5,10 @@ import Button from "../../../../UI/Button/Button";
 import Rotate from 'react-reveal/Rotate';
 
 type PropsStyle = {
-    style: CSSProperties
+    style?: CSSProperties
+    link?:string
+    title: string
+    desc: string
 }
 
 const JobsItem: React.FC< PropsStyle> = ( props) => {
@@ -14,11 +17,11 @@ const JobsItem: React.FC< PropsStyle> = ( props) => {
             <Rotate bottom left>
             <div className={style.wrapper}>
                 <div className={style.image} style={props.style}>
-                    <Button title={"Смотреть"} classAdd={'jobs_btn'}/>
+                    <Button title={"Смотреть"} classAdd={'jobs_btn'} link={props.link}/>
                 </div>
                 <div className={style.description}>
-                    <div className={style.title}><h3>Название проекта</h3></div>
-                    <div className={style.desk}>Краткое написание</div>
+                    <div className={style.title}><h3>{props.title}</h3></div>
+                    <div className={style.desk}>{props.desc}</div>
                 </div>
             </div>
             </Rotate>

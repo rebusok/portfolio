@@ -41,11 +41,34 @@
     }
 
     .button {
-      margin-top: 5%;
+      margin-top: 2%;
+    }
+    .sendFont {
+      color: white;
+      text-align: center;
     }
   }
 }
+.btnSend {
 
+
+    width: 120px;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    color: #fff;
+    background: #282c34;
+  cursor: pointer;
+    &:hover{
+      opacity: .7;
+    }
+  &:disabled{
+    opacity: .3;
+  }
+
+}
 
 .container {
   composes: container from "../Header/Header.module.scss";

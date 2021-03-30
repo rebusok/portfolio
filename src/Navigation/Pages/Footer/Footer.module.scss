@@ -21,10 +21,14 @@
 				display: flex;
 				justify-content: space-between;
 				width: 240px;
+
 				.icon{
 					width: 30px;
 					height: 30px;
-					background: gold;
+					img {
+						width: 30px;
+						height: 30px;
+					}
 				}
 			}
 			.desc{

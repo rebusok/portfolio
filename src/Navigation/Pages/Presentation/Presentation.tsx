@@ -2,7 +2,7 @@ import React from 'react';
 import style from './Presentation.module.scss'
 import Particles from "react-particles-js";
 import ReactTypingEffect from "react-typing-effect";
-
+import photo from '../../../assets/Image/photo.jpg'
 
 const particlesObj = {
     'particles': {
@@ -30,11 +30,11 @@ const Presentation = () => {
                         <ReactTypingEffect text={'я front-end разработчик'}/>
 
                     </div>
-                    <div className={style.block2}>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad
-                        architecto
-                        debitis distinctio dolore ducimus, error exercitationem fuga fugiat illum magnam molestiae
-                        mollitia
-                        natus repellat, sunt unde. Delectus dolores ea facilis.
+                    <div className={style.block2}>
+                        <div className={style.block2Wrapper}>
+                            <img src={photo} alt=""/>
+                            <span/>
+                        </div>
                     </div>
                 </div>
             </div>

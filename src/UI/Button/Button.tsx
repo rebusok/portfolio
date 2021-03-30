@@ -1,18 +1,19 @@
 import React from 'react';
-import { NavLink } from 'react-router-dom';
 import style from './Button.module.scss'
 
 
 type ButtonType = {
     title: string
     classAdd?: string
+    link?: string
 }
 
 const Button = (props: ButtonType) => {
     const finalClassName =`${style.btn} ${props.classAdd ? style[props.classAdd] : ''}`
+    const finalLink = props.link ? props.link : ''
     return (
         <React.Fragment>
-            <NavLink to={''} className={finalClassName }>{props.title}</NavLink>
+            <a href={finalLink} className={finalClassName }>{props.title}</a>
         </React.Fragment>
     );
 };

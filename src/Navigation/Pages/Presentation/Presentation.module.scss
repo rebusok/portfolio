@@ -16,12 +16,37 @@
   }
   .block2{
     align-self: stretch;
-
-    max-width: 30%;
+    position: relative;
+    max-width: 40%;
     display: flex;
     justify-content: center;
     align-items: center;
     padding: 10px;
+
+    .block2Wrapper{
+      position: relative;
+      img {
+        width: 100%;
+
+        backface-visibility: hidden;
+        position: relative;
+        z-index: 2;
+      }
+      span {
+        position: absolute;
+        top: 0;
+        z-index: 1;
+        height: 100%;
+        width: 85%;
+        border: 5px solid #4e93e6;
+        transform: scale(1.13) translate(10%, 0px);
+        left: 0;
+        right: 0;
+        margin-left: 8%;
+
+      }
+    }
+
   }
 }
 .container {
@@ -50,7 +75,7 @@
     align-items: center;
     min-height: 300px;
     .block2{
-      max-width: 100%;
+      max-width: 85%;
       margin-top: 10%;
     }
   }
