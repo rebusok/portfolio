@@ -1,22 +1,30 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.e15a5c84.chunk.css",
-    "main.js": "/portfolio/static/js/main.989ba7f1.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.989ba7f1.chunk.js.map",
-    "runtime-main.js": "/portfolio/static/js/runtime-main.8042e27a.js",
-    "runtime-main.js.map": "/portfolio/static/js/runtime-main.8042e27a.js.map",
-    "static/js/2.1cb9c2ae.chunk.js": "/portfolio/static/js/2.1cb9c2ae.chunk.js",
-    "static/js/2.1cb9c2ae.chunk.js.map": "/portfolio/static/js/2.1cb9c2ae.chunk.js.map",
-    "static/js/3.2229b541.chunk.js": "/portfolio/static/js/3.2229b541.chunk.js",
-    "static/js/3.2229b541.chunk.js.map": "/portfolio/static/js/3.2229b541.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.32a28fac.chunk.css",
+    "main.js": "/portfolio/static/js/main.9b028649.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.9b028649.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.e107937f.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.e107937f.js.map",
+    "static/js/2.68e19e60.chunk.js": "/portfolio/static/js/2.68e19e60.chunk.js",
+    "static/js/2.68e19e60.chunk.js.map": "/portfolio/static/js/2.68e19e60.chunk.js.map",
+    "static/js/3.f65a9685.chunk.js": "/portfolio/static/js/3.f65a9685.chunk.js",
+    "static/js/3.f65a9685.chunk.js.map": "/portfolio/static/js/3.f65a9685.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "static/css/main.e15a5c84.chunk.css.map": "/portfolio/static/css/main.e15a5c84.chunk.css.map",
-    "static/js/2.1cb9c2ae.chunk.js.LICENSE.txt": "/portfolio/static/js/2.1cb9c2ae.chunk.js.LICENSE.txt"
+    "static/css/main.32a28fac.chunk.css.map": "/portfolio/static/css/main.32a28fac.chunk.css.map",
+    "static/js/2.68e19e60.chunk.js.LICENSE.txt": "/portfolio/static/js/2.68e19e60.chunk.js.LICENSE.txt",
+    "static/media/Cards_project.6c210918.jpg": "/portfolio/static/media/Cards_project.6c210918.jpg",
+    "static/media/Shops.6271b9e1.jpg": "/portfolio/static/media/Shops.6271b9e1.jpg",
+    "static/media/Social_network.3bfe1e78.jpg": "/portfolio/static/media/Social_network.3bfe1e78.jpg",
+    "static/media/github.svg": "/portfolio/static/media/github.fa0212fe.svg",
+    "static/media/linkedin.svg": "/portfolio/static/media/linkedin.7defd339.svg",
+    "static/media/photo.e216d8f4.jpg": "/portfolio/static/media/photo.e216d8f4.jpg",
+    "static/media/promo.svg": "/portfolio/static/media/promo.1c136548.svg",
+    "static/media/todolist_image.70edad25.jpg": "/portfolio/static/media/todolist_image.70edad25.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.8042e27a.js",
-    "static/js/2.1cb9c2ae.chunk.js",
-    "static/css/main.e15a5c84.chunk.css",
-    "static/js/main.989ba7f1.chunk.js"
+    "static/js/runtime-main.e107937f.js",
+    "static/js/2.68e19e60.chunk.js",
+    "static/css/main.32a28fac.chunk.css",
+    "static/js/main.9b028649.chunk.js"
   ]
 }
