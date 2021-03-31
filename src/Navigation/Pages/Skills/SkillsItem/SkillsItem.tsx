@@ -7,6 +7,8 @@ import {IconProp} from '@fortawesome/fontawesome-svg-core';
 
 interface PropsType {
     icon: IconProp
+    iconUrl?: string
+    title: string
 
 }
 
@@ -14,9 +16,14 @@ const SkillsItem:FC<PropsType> = (props) => {
     return (
         <Rotate bottom left>
         <div className={style.wrapper}>
-            <div className={style.ava}><FontAwesomeIcon icon={props.icon} transform={{ rotate: -45 }}/></div>
-            <div className={style.react}>React</div>
-            <div className={style.description}>Подробное описания навыка</div>
+            <div className={style.ava}>
+                {props.iconUrl
+                    ? <img src={props.iconUrl} alt="" className={style.imgTrans}/>
+                    : <FontAwesomeIcon icon={props.icon} transform={{ rotate: -45 }}/>
+                }
+            </div>
+            <div className={style.react}>{props.title}</div>
+
         </div>
         </Rotate>
     );
