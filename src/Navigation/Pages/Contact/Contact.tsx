@@ -1,10 +1,14 @@
-import React, {ChangeEvent, useState} from 'react';
+import React, {ChangeEvent, FC, useState} from 'react';
 import style from './Contact.module.scss'
 import Title from '../../../components/Title/Title';
 import {Api} from "../../../API/API";
 
+interface ContactType {
+    title:string
+    setModal?: (value: boolean) => void
+}
 
-const Contact = () => {
+const Contact:FC<ContactType> = ({title, setModal}) => {
     const [name, setName] =useState<string>('')
     const [email, setEmail] =useState<string>('')
     const [mes, setMes] =useState('')
@@ -22,7 +26,6 @@ const Contact = () => {
     const onSubmitHandler = async () => {
         setDissable(true)
         if(name.trim()) {
-            debugger
             const res = await Api.sendMail({name: name, email: email, mes: mes})
             try {
                 if (res.status === 200) {
@@ -30,6 +33,7 @@ const Contact = () => {
 
                         setTimeout(() => {
                             setSendMes('')
+                            setModal && setModal(false)
                         }, 1000)
 
                 }
@@ -51,7 +55,7 @@ const Contact = () => {
         <div className={style.Contact}>
             <div className={style.container}>
                 <div className={style.wrapper}>
-                    <Title title={'Contact'}/>
+                    <Title title={title}/>
                     <form action="" >
                         <input type="text" placeholder={'Name'} value={name} onChange={(e) => ChangeInputName(e)}/>
                         <input type="text" placeholder={'E-mail'} value={email} onChange={(e) => ChangeInputEmail(e)}/>

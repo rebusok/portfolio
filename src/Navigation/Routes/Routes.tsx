@@ -20,7 +20,7 @@ const Routes = () => {
                 <Route path={PATH.MAIN} render={() => <Main/>}/>
                 <Route path={PATH.SKILLS} render={() => <Skills/>}/>
                 <Route path={PATH.PROJECT} render={() => <Jobs/>}/>
-                <Route path={PATH.CONTACT} render={() => <Contact/>}/>
+                <Route path={PATH.CONTACT} render={() => <Contact title={'Contact'}/>}/>
             </Switch>
         </React.Fragment>
     );

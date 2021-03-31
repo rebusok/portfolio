@@ -13,7 +13,7 @@ const Main = () => {
             <Skills/>
             <Jobs/>
             <Employ/>
-            <Contact/>
+            <Contact title={'Contact'}/>
             <Footer/>
         </React.Fragment>
     );
