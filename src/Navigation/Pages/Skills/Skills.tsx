@@ -4,8 +4,8 @@ import SkillsItem from "./SkillsItem/SkillsItem";
 import Title from "../../../components/Title/Title";
 import { faReact } from '@fortawesome/free-brands-svg-icons'
 import { faCode, faDesktop } from '@fortawesome/free-solid-svg-icons'
-import svgLodi from '../../../assets/svg/typescript.svg'
-import svgRedux from '../../../assets/svg/redux_original_logo_icon_146365.svg'
+import {svgRedux, svgJs, scgHtml, scgCss, svgTs} from '../../../assets/svg'
+
 const Skills = () => {
     return (
         <div className={style.Skills}>
@@ -16,9 +16,12 @@ const Skills = () => {
                         <Title title={'My skills'}/>
                     </div>
                     <div className={style.ability}>
-                        <SkillsItem icon={faCode} title={'Typescript '} iconUrl={svgLodi}/>
+                        <SkillsItem icon={faCode} title={'Typescript '} iconUrl={svgTs}/>
                         <SkillsItem icon={faReact} title={'React'}/>
                         <SkillsItem icon={faDesktop} title={'Redux'} iconUrl={svgRedux}/>
+                        <SkillsItem icon={faDesktop} title={'Javascript'} iconUrl={svgJs}/>
+                        <SkillsItem icon={faDesktop} title={'CSS'} iconUrl={scgCss}/>
+                        <SkillsItem icon={faDesktop} title={'HTML'} iconUrl={scgHtml}/>
 
 
 
