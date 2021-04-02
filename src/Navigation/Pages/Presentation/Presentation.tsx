@@ -2,7 +2,7 @@ import React from 'react';
 import style from './Presentation.module.scss'
 import Particles from "react-particles-js";
 import ReactTypingEffect from "react-typing-effect";
-import photo from '../../../assets/Image/photo.jpg'
+import photo from '../../../assets/Image/photo.webp'
 
 const particlesObj = {
     'particles': {

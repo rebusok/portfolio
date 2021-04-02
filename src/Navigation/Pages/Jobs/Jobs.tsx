@@ -2,10 +2,10 @@ import React from 'react';
 import style from './Jobs.module.scss'
 import JobsItem from "./JobsItem/JobsItem";
 import Title from "../../../components/Title/Title";
-import todolistImage from "../../../assets/Image/todolist_image.jpg"
-import socialImage from "../../../assets/Image/Social_network.jpg"
-import cardsImage from "../../../assets/Image/Cards_project.jpg"
-import hopsImage from "../../../assets/Image/Shops.jpg"
+import todolistImage from "../../../assets/Image/todolist_image.webp"
+import socialImage from "../../../assets/Image/Social_network.webp"
+import cardsImage from "../../../assets/Image/Cards_project.webp"
+import hopsImage from "../../../assets/Image/Shops.webp"
 
 
 const Jobs = () => {

@@ -1,15 +1,14 @@
-import React from 'react';
-import Presentation from "./Presentation/Presentation";
+import React, {lazy} from 'react';
 import Skills from "./Skills/Skills";
 import Jobs from "./Jobs/Jobs";
 import Employ from "./Employ/Employ";
 import Contact from "./Contact/Contact";
 import Footer from "./Footer/Footer";
-
+const AvatarComponent = lazy(() => import("./Presentation/Presentation"));
 const Main = () => {
     return (
         <React.Fragment>
-            <Presentation/>
+            <AvatarComponent/>
             <Skills/>
             <Jobs/>
             <Employ/>
