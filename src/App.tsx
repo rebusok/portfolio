@@ -6,6 +6,7 @@ import Layout from './components/layout/Layout';
 function App() {
     return (
         <div className={'app'}>
+
             <HashRouter>
                 <Layout/>
             </HashRouter>
